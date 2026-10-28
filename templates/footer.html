@@ -1,0 +1,50 @@
+<footer class="footer-ecotrack">
+    <div class="container">
+        <div class="row gy-4">
+            <!-- Brand & Mission -->
+            <div class="col-lg-6 col-md-7">
+                <div class="d-flex align-items-center gap-2 mb-2">
+                    <i class="bi bi-recycle fs-4 text-success"></i>
+                    <h5 class="text-white mb-0 fw-bold">EcoTrack</h5>
+                </div>
+                <p class="small text-light text-opacity-75 mb-2" style="max-width: 520px;">
+                    Smart Waste Management and Segregation System empowering citizens and municipal authorities to collaborate transparently for cleaner, healthier neighborhoods.
+                </p>
+                <div class="small text-success text-opacity-85 fw-semibold">
+                    <i class="bi bi-mortarboard me-1"></i> An academic mini-project developed for the University of Mumbai.
+                </div>
+            </div>
+
+            <!-- Quick Navigation -->
+            <div class="col-lg-3 col-md-5 col-sm-6">
+                <h6 class="footer-heading">Quick Links</h6>
+                <ul class="footer-links">
+                    <li><a href="{{ url_for('main.index') }}"><i class="bi bi-chevron-right small me-1"></i> Home</a></li>
+                    <li><a href="{{ url_for('main.segregation_guide') }}"><i class="bi bi-chevron-right small me-1"></i> Segregation Guide</a></li>
+                    <li><a href="{{ url_for('main.map_view') }}"><i class="bi bi-chevron-right small me-1"></i> Hotspot Map</a></li>
+                    <li><a href="{{ url_for('main.about') }}"><i class="bi bi-chevron-right small me-1"></i> About Project</a></li>
+                </ul>
+            </div>
+
+            <!-- Open Source & Licensing -->
+            <div class="col-lg-3 col-md-12 col-sm-6">
+                <h6 class="footer-heading">Open Source</h6>
+                <p class="small text-light text-opacity-75 mb-2">
+                    Built using free and open-source software including Flask, SQLite, Leaflet.js, OpenStreetMap, and Chart.js.
+                </p>
+                <span class="badge bg-success bg-opacity-25 text-success border border-success">
+                    <i class="bi bi-shield-check"></i> MIT Licensed
+                </span>
+            </div>
+        </div>
+
+        <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center small text-light text-opacity-75">
+            <div>
+                &copy; {{ current_year }} <strong>EcoTrack</strong>. Released under the <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-underline">MIT License</a>.
+            </div>
+            <div class="mt-2 mt-md-0">
+                <span>Designed for clean cities and transparent civic governance.</span>
+            </div>
+        </div>
+    </div>
+</footer>
